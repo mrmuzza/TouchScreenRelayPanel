@@ -31,7 +31,7 @@ buttons.append(button(4,'nothing'   ,[1,1],35))
 buttons.append(button(5,'kitchenlights'   ,[2,1],33))
 buttons.append(button(6,'waterheat'   ,[0,3],32))
 buttons.append(button(7,'waterpump'   ,[1,3],31))
-buttons.append(button(8,'extract'   ,[1,1],35))
+buttons.append(button(8,'extract'   ,[2,3],35))
 
 app = App(title="Keypad example", width=480, height=320, layout="grid")
 app.bg='black'
