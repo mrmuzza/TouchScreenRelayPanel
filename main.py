@@ -24,13 +24,14 @@ path = '/home/pi/TouchScreenRelayPanel/'
 buttons = []
 # index,image,grid,gpio
 buttons.append(button(0,'leftlights' ,[0,0],40))
-buttons.append(button(1,'rightlights',[1,0],38))
-buttons.append(button(2,'kitchenlights'  ,[2,0],36))
+buttons.append(button(1,'doorlights',[1,0],38))
+buttons.append(button(2,'rightlights'  ,[2,0],36))
 buttons.append(button(3,'sidelights'       ,[0,1],37))
-buttons.append(button(4,'doorlights'   ,[1,1],35))
-buttons.append(button(5,'waterpump'   ,[2,1],33))
+buttons.append(button(4,'nothing'   ,[1,1],35))
+buttons.append(button(5,'kitchenlights'   ,[2,1],33))
 buttons.append(button(6,'waterheat'   ,[0,3],32))
-buttons.append(button(7,'extract'   ,[1,3],31))
+buttons.append(button(7,'waterpump'   ,[1,3],31))
+buttons.append(button(8,'extract'   ,[1,1],35))
 
 app = App(title="Keypad example", width=480, height=320, layout="grid")
 app.bg='black'
