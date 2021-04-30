@@ -1,6 +1,5 @@
 from guizero import App, PushButton, Slider, Text
 from PIL import Image
-import rpi_backlight as bl
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BOARD)
