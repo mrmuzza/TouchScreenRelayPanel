@@ -20,13 +20,12 @@ def leftlights_callback():
     global leftlights_state, leftlights_button
     if leftlights_state == 0:
         leftlights_state = 1
-        leftlights_button.image = path + ‘leftlights_on.png'
+        leftlights_button.image = path + 'leftlights_on.png'
         GPIO.setup(40, GPIO.OUT)
         GPIO.output(40, GPIO.LOW)
-
     else:
         leftlights_state = 0
-        leftlights_button.image = path + ‘leftlights_off.png'
+        leftlights_button.image = path + 'leftlights_off.png'
         GPIO.setup(40, GPIO.OUT)
         GPIO.output(40, GPIO.HIGH)
 
