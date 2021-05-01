@@ -118,7 +118,7 @@ def extract_callback():
         GPIO.output(35, GPIO.LOW)
     else:
         extract_state = 0
-        air_button.image = path + 'extract_off.png'
+        extract_button.image = path + 'extract_off.png'
         GPIO.setup(35, GPIO.OUT)
         GPIO.output(35, GPIO.HIGH)
 
