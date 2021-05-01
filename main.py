@@ -22,12 +22,12 @@ def leftlights_callback():
         leftlights_state = 1
         leftlights_button.image = path + 'leftlights_on.png'
         GPIO.setup(40, GPIO.OUT)
-        GPIO.output(40, GPIO.LOW)
+        GPIO.output(40, GPIO.HIGH)
     else:
         leftlights_state = 0
         leftlights_button.image = path + 'leftlights_off.png'
         GPIO.setup(40, GPIO.OUT)
-        GPIO.output(40, GPIO.HIGH)
+        GPIO.output(40, GPIO.LOW)
 
 def rightlights_callback():
     global rightlights_state, rightlights_button
@@ -35,12 +35,12 @@ def rightlights_callback():
         rightlights_state = 1
         rightlights_button.image = path + 'rightlights_on.png'
         GPIO.setup(36, GPIO.OUT)
-        GPIO.output(36, GPIO.LOW)
+        GPIO.output(36, GPIO.HIGH)
     else:
         rightlights_state = 0
         rightlights_button.image = path + 'rightlights_off.png'
         GPIO.setup(36, GPIO.OUT)
-        GPIO.output(36, GPIO.HIGH)
+        GPIO.output(36, GPIO.LOW)
 
 
 def waterpump_callback():
@@ -49,12 +49,12 @@ def waterpump_callback():
         waterpump_state = 1
         waterpump_button.image = path + 'waterpump_on.png'
         GPIO.setup(31, GPIO.OUT)
-        GPIO.output(31, GPIO.LOW)
+        GPIO.output(31, GPIO.HIGH)
     else:
         waterpump_state = 0
         waterpump_button.image = path + 'waterpump_off.png'
         GPIO.setup(31, GPIO.OUT)
-        GPIO.output(31, GPIO.HIGH)
+        GPIO.output(31, GPIO.LOW)
 
 
 def waterheat_callback():
@@ -63,12 +63,12 @@ def waterheat_callback():
         waterheat_state = 1
         waterheat_button.image = path + 'waterheat_on.png'
         GPIO.setup(32, GPIO.OUT)
-        GPIO.output(32, GPIO.LOW)
+        GPIO.output(32, GPIO.HIGH)
     else:
         waterheat_state = 0
         waterheat_button.image = path + 'waterheat_off.png'
         GPIO.setup(32, GPIO.OUT)
-        GPIO.output(32, GPIO.HIGH)
+        GPIO.output(32, GPIO.LOW)
 
 def inverter_callback():
     global inverter_state, inverter_button
@@ -76,12 +76,12 @@ def inverter_callback():
         inverter_state = 1
         inverter_button.image = path + 'inverter_on.png'
         GPIO.setup(39, GPIO.OUT)
-        GPIO.output(39, GPIO.LOW)
+        GPIO.output(39, GPIO.HIGH)
     else:
         inverter_state = 0
         inverter_button.image = path + 'inverter_off.png'
         GPIO.setup(39, GPIO.OUT)
-        GPIO.output(39, GPIO.HIGH)
+        GPIO.output(39, GPIO.LOW)
 
 def doorlights_callback():
     global doorlights_state, doorlights_button
@@ -89,12 +89,12 @@ def doorlights_callback():
         doorlights_state = 1
         doorlights_button.image = path + 'doorlights_on.png'
         GPIO.setup(38, GPIO.OUT)
-        GPIO.output(38, GPIO.LOW)
+        GPIO.output(38, GPIO.HIGH)
     else:
         doorlights_state = 0
         doorlights_button.image = path + 'doorlights_off.png'
         GPIO.setup(38, GPIO.OUT)
-        GPIO.output(38, GPIO.HIGH)
+        GPIO.output(38, GPIO.LOW)
 
 def kitchenlights_callback():
     global kitchenlights_state, kitchenlights_button
@@ -102,12 +102,12 @@ def kitchenlights_callback():
         kitchenlights_state = 1
         kitchenlights_button.image = path + 'kitchenlights_on.png'
         GPIO.setup(33, GPIO.OUT)
-        GPIO.output(33, GPIO.LOW)
+        GPIO.output(33, GPIO.HIGH)
     else:
         kitchenlights_state = 0
         kitchenlights_button.image = path + 'kitchenlights_off.png'
         GPIO.setup(33, GPIO.OUT)
-        GPIO.output(33, GPIO.HIGH)
+        GPIO.output(33, GPIO.LOW)
 
 def extract_callback():
     global extract_state, extract_button
@@ -115,12 +115,12 @@ def extract_callback():
         extract_state = 1
         extract_button.image = path + 'extract_on.png'
         GPIO.setup(35, GPIO.OUT)
-        GPIO.output(35, GPIO.LOW)
+        GPIO.output(35, GPIO.HIGH)
     else:
         extract_state = 0
         extract_button.image = path + 'extract_off.png'
         GPIO.setup(35, GPIO.OUT)
-        GPIO.output(35, GPIO.HIGH)
+        GPIO.output(35, GPIO.LOW)
 
 def sidelights_callback():
     global sidelights_state, sidelights_button
@@ -128,12 +128,12 @@ def sidelights_callback():
         sidelights_state = 1
         sidelights_button.image = path + 'sidelights_on.png'
         GPIO.setup(37, GPIO.OUT)
-        GPIO.output(37, GPIO.LOW)
+        GPIO.output(37, GPIO.HIGH)
     else:
         sidelights_state = 0
         sidelights_button.image = path + 'sidelights_off.png'
         GPIO.setup(37, GPIO.OUT)
-        GPIO.output(37, GPIO.HIGH)
+        GPIO.output(37, GPIO.LOW)
 
 def screen_brightness():
     global slider
