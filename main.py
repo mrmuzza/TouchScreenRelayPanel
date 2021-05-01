@@ -11,7 +11,7 @@ rightlights_state = 0
 waterpump_state = 0
 waterheat_state = 0
 inverter_state = 0
-doorlights_light_state = 0
+doorlights_state = 0
 kitchenlights_state = 0
 extract_state = 0
 sidelights_state = 0
@@ -146,12 +146,12 @@ app = App(title="Keypad example", width=480, height=320, layout="grid")
 app.bg='black'
 leftlights_button = PushButton(app, command=leftlights_callback, grid=[0,0], align='left', image = path + 'leftlights_off.png')
 rightlights_button = PushButton(app, command=rightlights_callback, grid=[2,0], align='left',image = path + 'rightlights_off.png')
-waterpump_button  = PushButton(app, command=waterpump_callback, grid=[1,3], align='left',image = path + 'waterpump_off.png')
-waterheat_button  = PushButton(app, command=waterheat_callback, grid=[0,3], align='left',image = path + 'waterheat_off.png')
-inverter_button  = PushButton(app, command=inverter_callback, grid=[1,1], align='left',image = path + 'inverter_off.png')
+waterpump_button  = PushButton(app, command=waterpump_callback, grid=[0,2], align='left',image = path + 'waterpump_off.png')
+waterheat_button  = PushButton(app, command=waterheat_callback, grid=[1,2], align='left',image = path + 'waterheat_off.png')
+inverter_button  = PushButton(app, command=inverter_callback, grid=[2,2], align='left',image = path + 'inverter_off.png')
 doorlights_button = PushButton(app, command=doorlights_callback, grid=[1,0], align='left', image = path + 'doorlights_off.png')
 kitchenlights_button = PushButton(app, command=kitchenlights_callback, grid=[2,1], align='left',image = path + 'kitchenlights_off.png')
-extract_button  = PushButton(app, command=extract_callback, grid=[2,3], align='left',image = path + 'extract_off.png')
+extract_button  = PushButton(app, command=extract_callback, grid=[1,1], align='left',image = path + 'extract_off.png')
 sidelights_button  = PushButton(app, command=sidelights_callback, grid=[0,1], align='left',image = path + 'sidelights_off.png')
 
 
