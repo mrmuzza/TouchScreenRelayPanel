@@ -128,12 +128,12 @@ def sidelights_callback():
         sidelights_state = 1
         sidelights_button.image = path + 'sidelights_on.png'
         GPIO.setup(32, GPIO.OUT)
-        GPIO.output(32, GPIO.LOW)
+        GPIO.output(32, GPIO.HIGH)
     else:
         sidelights_state = 0
         sidelights_button.image = path + 'sidelights_off.png'
         GPIO.setup(32, GPIO.OUT)
-        GPIO.output(32, GPIO.HIGH)
+        GPIO.output(32, GPIO.LOW)
 
 def screen_brightness():
     global slider
