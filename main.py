@@ -163,7 +163,6 @@ sidelights_button  = PushButton(app, command=sidelights_callback, grid=[0,1], al
 
 def main():
     app.tk.attributes("-fullscreen",True)
-    app.tk.config(cursor='none')
     app.display()
 
 if __name__ == '__main__':
