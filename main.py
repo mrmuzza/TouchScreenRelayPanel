@@ -142,7 +142,7 @@ def screen_brightness():
 
 
 
-app = App(title="Keypad example", width=480, height=320, layout="grid")
+app = App(title="Keypad example", width=800, height=480, layout="grid")
 app.bg='black'
 leftlights_button = PushButton(app, command=leftlights_callback, grid=[0,0], align='left', image = path + 'leftlights_off.png')
 rightlights_button = PushButton(app, command=rightlights_callback, grid=[2,0], align='left',image = path + 'rightlights_off.png')
