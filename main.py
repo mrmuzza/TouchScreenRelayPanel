@@ -135,7 +135,8 @@ def sidelights_callback():
         GPIO.setup(32, GPIO.OUT)
         GPIO.output(32, GPIO.LOW)
 
-def screen_brightness():
+
+    def screen_brightness():
     global slider
     print(slider.value)
     bl.set_brightness(str(slider.value))
@@ -144,16 +145,16 @@ def screen_brightness():
 
 app = App(title="Keypad example", width=800, height=480, layout="grid")
 app.bg='black'
-leftlights_button = PushButton(app, command=leftlights_callback, height=160, width=266, grid=[0,0], align='left', image = path + 'leftlights_off.png')
-rightlights_button = PushButton(app, command=rightlights_callback, height=160, width=266, grid=[2,0], align='left',image = path + 'rightlights_off.png')
-waterpump_button  = PushButton(app, command=waterpump_callback, height=160, width=266, grid=[0,2], align='left',image = path + 'waterpump_off.png')
-waterheat_button  = PushButton(app, command=waterheat_callback, height=160, width=266, grid=[1,2], align='left',image = path + 'waterheat_off.png')
-inverter_button  = PushButton(app, command=inverter_callback, height=160, width=266, grid=[2,2], align='left',image = path + 'inverter_off.png')
-doorlights_button = PushButton(app, command=doorlights_callback, height=160, width=266, grid=[1,0], align='left', image = path + 'doorlights_off.png')
-kitchenlights_button = PushButton(app, command=kitchenlights_callback, height=160, width=266, grid=[2,1], align='left',image = path + 'kitchenlights_off.png')
-extract_button  = PushButton(app, command=extract_callback, grid=[1,1], height=160, width=266, align='left',image = path + 'extract_off.png')
-sidelights_button  = PushButton(app, command=sidelights_callback, height=160, width=266, grid=[0,1], align='left',image = path + 'sidelights_off.png')
 
+leftlights_button = PushButton(app, command=leftlights_callback, height='fill', width='fill', grid=[0,0], align='left', image = path + 'leftlights_off.png')
+rightlights_button = PushButton(app, command=rightlights_callback, height='fill', width='fill', grid=[2,0], align='left',image = path + 'rightlights_off.png')
+waterpump_button  = PushButton(app, command=waterpump_callback, height='fill', width='fill', grid=[0,2], align='left',image = path + 'waterpump_off.png')
+waterheat_button  = PushButton(app, command=waterheat_callback, height='fill', width='fill', grid=[1,2], align='left',image = path + 'waterheat_off.png')
+inverter_button  = PushButton(app, command=inverter_callback, height='fill', width='fill', grid=[2,2], align='left',image = path + 'inverter_off.png')
+doorlights_button = PushButton(app, command=doorlights_callback, height='fill', width='fill', grid=[1,0], align='left', image = path + 'doorlights_off.png')
+kitchenlights_button = PushButton(app, command=kitchenlights_callback, height='fill', width='fill', grid=[2,1], align='left',image = path + 'kitchenlights_off.png')
+extract_button  = PushButton(app, command=extract_callback, grid=[1,1], height='fill', width='fill', align='left',image = path + 'extract_off.png')
+sidelights_button  = PushButton(app, command=sidelights_callback, height='fill', width='fill', grid=[0,1], align='left',image = path + 'sidelights_off.png')
 
 # slider = Slider(app, command=screen_brightness, grid=[0,2,3,2], align='left', start=30, end=255)
 # slider.value='255'
